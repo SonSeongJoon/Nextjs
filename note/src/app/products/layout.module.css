@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #f56a6a;
+    margin-top: 8px;
+}
+
+.nav a {
+    padding: 0 8px;
+}
+
+.product {
+    padding: 8px;
+}
+

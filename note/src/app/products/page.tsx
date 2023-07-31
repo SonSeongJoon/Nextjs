@@ -1,5 +1,7 @@
 import Link from 'next/link';
 const products = ['shirts', 'pants', 'skirt', 'shoes']
+
+
 export default function ProductsPage() {
     return (
         <>

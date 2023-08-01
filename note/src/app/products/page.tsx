@@ -4,7 +4,6 @@ import styles from './page.module.css'
 import {Simulate} from "react-dom/test-utils";
 import change = Simulate.change;
 import MeowArticle from "@/app/component/MeowArticle";
-import error = Simulate.error;
 import clothesImage from '../../../public/images/clothes.jpg'
 import Image from 'next/image'
 export default async function ProductsPage() {

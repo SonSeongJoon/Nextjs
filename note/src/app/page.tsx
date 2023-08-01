@@ -11,6 +11,7 @@ export default function Home() {
             alt="shop"
             width={400}
             height={400}/>
+
             <h1>홈페이지다.버전5</h1>
             <Counter />
         </>

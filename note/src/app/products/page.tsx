@@ -4,8 +4,10 @@ import styles from './page.module.css'
 import {Simulate} from "react-dom/test-utils";
 import change = Simulate.change;
 import MeowArticle from "@/app/component/MeowArticle";
+import error = Simulate.error;
 
 export default async function ProductsPage() {
+    throw new Error();
     const products = await getProducts();
     return (
         <>

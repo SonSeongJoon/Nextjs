@@ -14,10 +14,21 @@ const nextConfig = {
                 source: '/products/deleted_forever',
                 destination: '/products',
                 permanent: false,
-            }
-
+            },
         ]
-    }
+    },
+    async rewrites() {
+        return [
+            {
+                source: '/ellie',
+                destination: '/about/me/ellie',
+            },
+            {
+                source: '/items/:slug',
+                destination: '/products/:slug',
+            },
+        ]
+    },
 }
 
 module.exports = nextConfig

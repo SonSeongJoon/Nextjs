@@ -1,6 +1,7 @@
-import {notFound} from 'next/navigation';
+import {notFound, redirect} from 'next/navigation';
 import {getProduct, getProducts} from "@/app/service/products";
 import Image from "next/image";
+import GoProductsButton from '../../component/GoProductsButton'
 
 
 type Props = {
@@ -18,7 +19,7 @@ export function generateMetadata({params}: Props) {
 export default async function ProductPage({params: {slug}}: Props) {
     const product = await getProduct(slug);
     if (!product) {
-        notFound();
+        redirect('/products');
     }
     return (
         <>
@@ -29,6 +30,7 @@ export default async function ProductPage({params: {slug}}: Props) {
                 width={300}
                 height={300}
             />
+            <GoProductsButton/>
         </>
     )
 }

@@ -11,7 +11,7 @@ export default function Home() {
             alt="shop"
             width={400}
             height={400}/>
-            <h1>홈페이지다. 버전2</h1>
+            <h1>홈페이지다.</h1>
             <Counter />
         </>
 )
